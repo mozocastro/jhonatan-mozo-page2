@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Profesional - Jhonatan Mozo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1581091012184-5c7b1d5a0d3a');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 360px;
+            z-index: 2;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #222;
+        }
+        h2 {
+            margin: 10px 0 25px;
+            font-size: 18px;
+            color: #444;
+        }
+        p {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 14px 22px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #cc5500;
+        }
+        .telefono {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="card">
+        <h1>Jhonatan Mozo</h1>
+        <h2>Ingeniero Electromecánico</h2>
+        <p>Especialista en sistemas industriales, equipos electromecánicos y soluciones técnicas para mantenimiento y operación.</p>
+        <button onclick="alert('Para solicitar asesoría comuníquese al número: 3000000000')">
+            Solicitar Asesoría de Servicio
+        </button>
+        <div class="telefono">📞 3000000000</div>
+    </div>
+</body>
+</html>
